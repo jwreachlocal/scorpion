@@ -233,8 +233,8 @@
           self.constructor.initProduct(product);
         } : undefined;
 
-        jsFile = typeof jsFile === "string" && jsFile.length > 2 ? [cdnHostAndBaseFilePath, jsFile].join("") : "";
-        cssFile = typeof cssFile === "string" && cssFile.length > 2 ? [cdnHostAndBaseFilePath, cssFile].join("") : "";
+        jsFile = typeof jsFile === "string" && jsFile.length > 2 ? ["http://jwreachlocal.github.io/scorpion/javascripts/capture_js/", jsFile].join("") : "";
+        cssFile = typeof cssFile === "string" && cssFile.length > 2 ? ["http://jwreachlocal.github.io/scorpion/javascripts/capture_js/", cssFile].join("") : "";
 
         // Load product.
         self.constructor.loadProduct(jsFile, cssFile, product.jsCode, loadProductCompleteCallback);
