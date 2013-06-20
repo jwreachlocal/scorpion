@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>WEB STORAGE: GET ITEM</title>
+		<script>
+			/**
+			 * Retrieve data in web storage.
+			 *
+			 * Keys are submitted to this script via a GET request in the "rl_ws" parameter in the querystring.  The parameter value is a
+			 * string representation of a JSON object.  The object is an array of strings.
+			 * Ex. ?rl_ws=["foo","bar","cake"]
+			 *
+			 * An optional id parameter "rl_eid" may be passed in the querystring.
+			 *
+			 * Data is written to the document body and sent back to the parent window (if applicable) using postMessage() as a string representation of a JSON object.
+			 * Data written to the document body only contains the data retrieved.
+			 * Ex. "{"foo":"123","bar":"jump","cake":"eat"}"
+			 * Data sent to the parent window using postMessage() includes the id value in the "rl_eid" parameter.
+			 */
+			var storage = [],
+				response = {},
+				id;
+
+			// Helper function to check if object is an array.
+			var isArray = function(obj) {
+				try {
+					var c = obj.constructor.toString().match(/function\s*(\w+)/);
+					return c[1] === "Array" ? true : false;
+				} catch(err) {
+					return false;
+				}
+			};
+
+			storage = (function(qs) {
+				// Parse querystring (location.search).
+				var qsArr = qs.split("&"),
+					ws = {};
+
+				for (var i = -1, length = qsArr.length; ++i < length;) {
+					var param = qsArr[i].split("="),
+						key = param[0] || "",
+						value = typeof param[1] === "string" && param[1] !== "" ? decodeURIComponent(param[1]) : "[]" ;
+
+					switch (key) {
+						case "rl_ws":
+							try {
+								ws = JSON.parse(value);
+							} catch(err) {
+							}
+							continue;
+
+						case "rl_eid":
+							id = value;
+							continue;
+
+						default:
+							continue;
+					}
+				}
+
+				return ws;
+			})(location.search.replace("?", ""));
+
+			(function(wsArr) {
+				// Get stored data.
+				var ts = parseInt((new Date()).getTime() / 1000);
+
+				// Sanity check.
+				if (!isArray(wsArr)) {
+					return;
+				}
+
+				// Helper function to retrieve persistent data that has not expired.
+				var checkLocalStorage = function(key) {
+					var response = localStorage.getItem(key),
+						value,
+						expires;
+
+					if (response === null) {
+						// Key not found.
+						return null;
+					}
+
+					response = JSON.parse(response);
+					value = response.value;
+					expires = response.expires;
+
+					if (expires !== "" && expires < ts) {
+						// Date point has expired.
+						return null;
+					}
+
+					return value;
+				};
+
+				for (var i = -1, length = wsArr.length; ++i < length;) {
+					var key = wsArr[i],
+						value;
+
+					// Sanity check.
+					if (typeof key !== "string" || key === "") {
+						// Key must be non-empty string.
+						continue;
+					}
+
+					// Check sessionStorage.
+					value = sessionStorage.getItem(key);
+
+					if (value === null) {
+						// Check localStorage.
+						value = checkLocalStorage(key);
+
+						if (value !== null) {
+							// Found key in localStorage.
+							response[key] = value;
+							continue;
+						}
+
+						// Cannot find key in sessionStorage & localStorage.
+						continue;
+					}
+
+					// Found key in sessionStorage.
+					response[key] = value;
+				}
+
+				// Send data back to parent window as a JSON object.
+				if (parent !== window) {
+					parent.postMessage(JSON.stringify({id: id, data: response}), document.referrer);
+				}
+			})(storage);
+		</script>
+	</head>
+	<body>
+		OK
+	</body>
+</html>

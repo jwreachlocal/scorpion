@@ -1,0 +1,64 @@
+#rl-cookies-notice{
+	background-color: #6E6C6D;
+	color: white;
+}
+
+.rl-cookie-notice-content{
+	margin:0 auto;
+	padding:10px;
+	max-width:900px;
+}
+
+#rl-cookies-notice .rl-cookie-notice-content h3 {
+	width: 25%;
+	font-family: Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	font-size: 27px;
+	float: left;
+	color: white;
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+}
+
+#rl-cookies-notice .rl-cookie-notice-content p {
+	width: 75%;
+	font-family: Arial,Helvetica,sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	float: right;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+#rl-cookies-notice .rl-cookie-notice-content .rl-close-btn {
+	float: right;
+	clear: right;
+	width: 24px;
+	height: 24px;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	font-family: Arial,Helvetica,sans-serif;
+}
+
+.rl-clear{
+	clear:both;
+}
+
+#rl-cookies-notice .rl-cookie-notice-content a {
+	color: #97CA00;
+	text-decoration: none;
+}
+
+#rl-cookies-notice .rl-cookie-notice-content .rl-close-btn a {
+	color: white;
+}
+
+@media only screen and (max-width: 767px) {
+
+	#rl-cookies-notice .rl-cookie-notice-content h3, #rl-cookies-notice .rl-cookie-notice-content p{
+		width: auto;
+		float: none;
+	}
+
+}

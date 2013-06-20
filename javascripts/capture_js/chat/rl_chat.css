@@ -1,0 +1,7 @@
+#apexchat_invitation_container_wrapper,
+#apexchat_invitation_container_minimized_wrapper {
+	position: absolute !important;
+	top: -99999px !important;
+	left: -99999px !important;
+	display: none !important;
+}

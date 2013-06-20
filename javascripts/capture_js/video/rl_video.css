@@ -1,0 +1,35 @@
+#rl-video-container {
+	display: block;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99999;
+}
+
+	#rl-video {
+		left: 50%;
+		margin-left: -200px;
+		margin-top: -176px;
+		position: relative;
+		top: 50%;
+		width: 400px;
+	}
+	
+		#rl-video .rl-video-close-container {
+			height: 20px;
+			position: relative;
+		}
+
+			#rl-video .rl-video-close {
+				position: absolute;
+				right: 0;
+			}
+			
+		#rl-video-iframe {
+			border: 0;
+			height: 332px;
+			overflow: hidden;
+			width: 400px;
+		}

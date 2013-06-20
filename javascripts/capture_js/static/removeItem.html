@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>WEB STORAGE: REMOVE ITEM</title>
+		<script>
+			/**
+			 * Remove data in web storage.
+			 *
+			 * Keys are submitted to this script via a GET request in the "rl_ws" parameter in the querystring.  The parameter value is a
+			 * string representation of a JSON object.  The object is an array of strings.
+			 * Ex. ?rl_ws=["foo","bar","cake"]
+			 */
+			var storage,
+				id;
+
+			// Helper function to check if object is an array.
+			var isArray = function(obj) {
+				try {
+					var c = obj.constructor.toString().match(/function\s*(\w+)/);
+					return c[1] === "Array" ? true : false;
+				} catch(err) {
+					return false;
+				}
+			};
+
+			storage = (function(qs) {
+				// Parse querystring (location.search).
+				var qsArr = qs.split("&"),
+					ws = {};
+
+				for (var i = -1, length = qsArr.length; ++i < length;) {
+					var param = qsArr[i].split("="),
+						key = param[0] || "",
+						value = typeof param[1] === "string" && param[1] !== "" ? decodeURIComponent(param[1]) : "[]" ;
+
+					switch (key) {
+						case "rl_ws":
+							try {
+								ws = JSON.parse(value);
+							} catch(err) {
+							}
+							return ws;
+
+						case "rl_eid":
+							id = value;
+							continue;
+
+						default:
+							continue;
+					}
+				}
+
+				return ws;
+			})(location.search.replace("?", ""));
+
+			(function(wsArr) {
+				// Remove stored data.
+
+				// Sanity check.
+				if (!isArray(wsArr)) {
+					return;
+				}
+
+				for (var i = -1, length = wsArr.length; ++i < length;) {
+					var key = wsArr[i];
+
+					// Sanity check.
+					if (typeof key !== "string" || key === "") {
+						// Key must be non-empty string.
+						continue;
+					}
+
+					// Remove data point.
+					sessionStorage.removeItem(key);
+					localStorage.removeItem(key);
+				}
+			})(storage);
+
+			// Send data back to parent window as a JSON object.
+			if (parent !== window) {
+				parent.postMessage(JSON.stringify({id: id, data: "OK"}), document.referrer);
+			}
+		</script>
+	</head>
+	<body>
+		OK
+	</body>
+</html>

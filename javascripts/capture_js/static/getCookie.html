@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>GET COOKIE</title>
+		<script>
+			/**
+			 * Retrieve data stored in cookies.
+			 *
+			 * Keys are submitted to this script via a GET request as parameters in the querystring.
+			 * Ex. ?foo&bar&cake
+			 *
+			 * An optional id parameter "rl_eid" may be passed in the querystring.
+			 *
+			 * Data is written to the document body and sent back to the parent window (if applicable) using postMessage() as a string representation of a JSON object.
+			 * Data written to the document body only contains the data retrieved.
+			 * Ex. "{"foo":"123","bar":"jump","cake":"eat"}"
+			 * Data sent to the parent window using postMessage() includes the id value in the "rl_eid" parameter.
+			 */
+			var id;	
+
+			/**
+			 * Helper function to retrieve cookies.
+			 * Taken from http://www.w3schools.com/js/js_cookies.asp.
+			 */
+			function getCookie(c_name) {
+			    var i, x, y, ARRcookies = document.cookie.split(";");
+			    for (i = 0; i < ARRcookies.length; i++) {
+			        x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
+			        y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
+			        x = x.replace(/^\s+|\s+$/g, "");
+			        if (x == c_name) {
+			            return unescape(y);
+			        }
+			    }
+			}
+
+			var response = (function(qs) {
+				// Parse querystring (location.search) and retrieve list of cookies other than scid.
+				var qsArr = qs.split("&"),
+					c = {};
+
+				for (var i = -1, length = qsArr.length; ++i < length;) {
+					var param = qsArr[i].split("="),
+						key = param[0] || "",
+						value = typeof param[1] === "string" && param[1] !== "" ? decodeURI(param[1]) : "[]" ;
+
+					switch (key) {
+						case "":
+						case "scid":
+							continue;
+
+						case "rl_eid":
+							id = value;
+							break;
+
+						default:
+							c[key] = getCookie(key);
+					}
+				}
+
+				return c;
+			})(decodeURI(location.search).replace("?", ""));
+
+
+			// Send data back to parent window as a JSON object.
+			if (parent !== window) {
+				parent.postMessage(JSON.stringify({id: id, data: response}), document.referrer);
+			}			
+		</script>
+	</head>
+	<body>
+		OK
+	</body>
+</html>

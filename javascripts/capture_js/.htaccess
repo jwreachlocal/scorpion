@@ -1,0 +1,16 @@
+RewriteEngine On
+
+#RewriteCond %{REQUEST_URI} !^/$
+#RewriteCond %{REQUEST_FILE} !-f
+#RewriteCond %{REQUEST_FILE} !-d
+
+RewriteCond %{REQUEST_URI} /getcookie
+RewriteRule (.*) static/getCookie.html
+
+RewriteCond %{REQUEST_URI} /api/v1/visits
+RewriteRule (.*) tests/visits.php
+
+RewriteCond %{REQUEST_URI} /api/v1/cvts [OR]
+RewriteCond %{REQUEST_URI} /api/v1/emails [OR]
+RewriteCond %{REQUEST_URI} /api/v1/post
+RewriteRule (.*) tests/post.php [L]

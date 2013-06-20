@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>WEB STORAGE: SET ITEM</title>
+		<script>
+			/**
+			 * Store data in web storage.
+			 *
+			 * Each data point is a plain object containing the follow properties:
+			 * k - string - key
+			 * v - string - value
+			 * e - string/number - (optional) expiration date in unix time
+			 *
+			 * If the data point does not contain an expiration or if the expiration before "now", then the data point
+			 * is stored in the sessionStorage object; otherwise, it is stored in the localStorage object.
+			 *
+			 * In sessionStorage, data value is stored as is.
+			 *
+			 * In localStorage, data value is stored as a string representation of a JSON object.  The object has a "value" and "expires" property.
+			 * Ex. "{"value":"food","expires":"12345678"}"
+			 *
+			 * Data are submitted to this script via a GET request in the "rl_ws" parameter in the querystring.  The parameter value is a
+			 * string representation of a JSON object.  The object is an array of data point object.
+			 * Ex. ?rl_ws=[{"k":"foo","v":"bar"},{"k":"cake","v":"strawberry","e":1355177763},{"k":"cupcake","v":"mint","e":"1355177763"},{"k":"muffin","v":"cocao","e":"1355179999"},{"k":"drink","v":"mint","e":""},{"k":"sear","v":"mint","e":null}]
+			 */
+			var storage,
+				keys = [],
+				id;
+
+			// Helper function to check if object is an array.
+			var isArray = function(obj) {
+				try {
+					var c = obj.constructor.toString().match(/function\s*(\w+)/);
+					return c[1] === "Array" ? true : false;
+				} catch(err) {
+					return false;
+				}
+			};
+
+			storage = (function(qs) {
+				// Parse querystring (location.search).
+				var qsArr = qs.split("&"),
+					ws = {};
+
+				for (var i = -1, length = qsArr.length; ++i < length;) {
+					var param = qsArr[i].split("="),
+						key = param[0] || "",
+						value = typeof param[1] === "string" && param[1] !== "" ? decodeURIComponent(param[1]) : "[]" ;
+
+					switch (key) {
+						case "rl_ws":
+							try {
+								ws = JSON.parse(value);
+							} catch(err) {
+							}
+							continue;
+
+						case "rl_eid":
+							id = value;
+							continue;
+
+						default:
+							continue;
+					}
+				}
+
+				return ws;
+			})(location.search.replace("?", ""));
+
+			(function(wsArr) {
+				// Store persistent data.
+				var ts = parseInt((new Date()).getTime() / 1000);
+
+				// Sanity check.
+				if (!isArray(wsArr)) {
+					return;
+				}
+
+				for (var i = -1, length = wsArr.length; ++i < length;) {
+					var p = wsArr[i],
+						key,
+						value,
+						expires,
+						type;
+
+					// Sanity check.
+					if (!p || !p.k || !p.v) {
+						// Key and value must exist.
+						continue;
+					}
+
+					key = p.k;
+					value = p.v;
+					expires = p.e;
+
+					// Data scrub.
+					if (typeof expires === "string" && isNaN(expires) === false && expires !== "") {
+						expires = Number(expires);
+					}
+
+					// Remove existing key from storage.
+					sessionStorage.removeItem(key);
+					localStorage.removeItem(key);
+
+					// Store data.
+					if (expires === undefined) {
+						// Session storage.
+						sessionStorage.setItem(key, value);
+						type = "session";
+					} else if (typeof expires === "number") {
+						// Storage with an expiration.
+						if (expires <= ts) {
+							// Expiration is now so set as session.
+							sessionStorage.setItem(key, value);
+							type = "session";
+						} else {
+							// Set as persistent.
+							localStorage.setItem(key, JSON.stringify({value: value, expires: expires}));
+							type = "local";
+						}
+					} else {
+						// Persistent storage with no expiration.
+						localStorage.setItem(key, JSON.stringify({value: value, expires: ""}));
+						type = "local";
+					}
+
+					keys.push({k: key, t: type});
+				}
+
+				// Send data back to parent window as a JSON object.
+				if (parent !== window) {
+					parent.postMessage(JSON.stringify({id: id, data: "OK"}), document.referrer);
+				}
+			})(storage);
+		</script>
+	</head>
+	<body>
+		OK
+	</body>
+</html>

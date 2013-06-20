@@ -1,0 +1,1 @@
+window.RL_PROXY_DOMAINS = ["avxtrk.com", "ddcsem.com", "ezlcl.com", "reachlocal.com", "reachlocal.net", "rtrk.com", "rtrk.com.au", "rtrk1.com", "rtrk2.com", "rtrk5.com", "search-dealer.com", "smrtlnk.com", "trvlclick.com"]; // Hard proxy base domains.
