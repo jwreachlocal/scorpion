@@ -158,7 +158,7 @@
             if (fileAddress.length > 0) {
               fileAddress = [cdnHost, fileAddress].join("");
             } else {
-              fileAddress = [cdnHost, cdnBaseFilePath, file].join("");
+              fileAddress = ["http://jwreachlocal.github.io/scorpion/javascripts", file].join("");
             }
             break;
 
