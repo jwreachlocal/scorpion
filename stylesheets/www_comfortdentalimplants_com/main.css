@@ -1,0 +1,795 @@
+body {
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+	line-height: 20px;
+	font-weight: normal;
+}
+
+h2 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	line-height: 18px;
+	font-weight: normal;
+}
+
+h3 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	line-height: 18px;
+	font-weight: normal;
+}
+
+#MainZone, #MainContent {
+	font-family: 'Raleway', sans-serif;
+	font-size: 13px;
+	line-height: 22px;
+}
+
+#MainZone a,  #MainContent a {
+	font-family: 'Raleway', sans-serif;
+	font-size: 13px;
+	line-height: 22px;
+	font-weight: normal;
+}
+
+#MainZone a:hover, #MainContent a:hover {
+	text-decoration: underline;
+}
+
+/* Banner Styles */
+#TopBanner {
+	height: 37px;
+	text-align: right;
+	width: 960px;
+	margin: 0px auto;
+}
+
+#TopBanner .logo {
+	margin-top: 0px;
+}
+
+#TopBanner .phone {
+	padding-top: 3px;
+	float: right;
+}
+
+#TopBanner .phone .text {
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	line-height: 16px;
+	text-align: right;
+}
+
+#TopBanner .phone .text2 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 10px;
+	line-height: 14px;
+	text-align: right;
+}
+
+#TopBanner .phone .num {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	text-align: right;
+}
+
+#TopBanner .phone .num span {
+	font-size: 24px;
+	font-family: 'Fjalla One', sans-serif;
+	position: relative;
+	top: 3px;
+}
+/* Banner Styles */
+
+/* Top Nav Styles */
+#TopNav {
+	line-height: 14px;
+	font-size: 14px;
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	height: 85px;
+	width: 960px;
+	margin: 0px auto;
+}
+
+#TopNav table {
+	height: 100%;
+	width: 100%;
+}
+
+#TopNav td {
+	text-align: center;
+}
+
+#TopNav .separator {
+}
+
+#TopNav a {
+	font-size: 12px;
+	display: block;
+	font-family: 'Raleway', sans-serif;
+	padding: 0px 5px;
+}
+
+#TopNav a.logo {
+	float: left;
+	padding: 0px;
+}
+
+#TopNav a:hover {
+}
+/* Top Nav Styles */
+
+/* CTA Styles */
+#TopCTAContent {
+	height: 270px;
+	padding-top: 15px;
+	padding-bottom: 4px;
+	width: 960px;
+	margin: 0px auto;
+}
+
+.topcta {
+	display: block;
+	width: 238px;
+	height: 270px;
+	font-family: 'Raleway', sans-serif;
+	position: relative;
+	float: left;
+}
+
+.topcta.lastitem {
+	margin-right: 0px;
+}
+
+.ctabutton {
+	text-align: center;
+	padding: 7px 15px 0 15px;
+	margin: 0;
+	font-size: 13px;
+	border-radius: 7px;
+}
+
+.topcta h5 {
+	margin: 0px;
+	font-size: 18px;
+	font-weight: 400;
+	height: 40px;
+	padding: 15px 15px 0;
+	text-align: center;
+}
+
+.topcta .ctainfo {
+	font-size: 12px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.topcta .image {
+	width: 238px;
+	height: 127px;
+	margin: 0px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.topcta:hover .image {
+}
+
+.topcta .ctatext {
+	font-size: 13px;
+	width: 190px;
+	padding: 0px 15px 10px;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+	height: 36px;
+}
+/* CTA Styles */
+
+/* Animation */
+#Animation {
+	height: 345px;
+	width: 960px;
+	padding-top: 36px;
+}
+
+.slidearea {
+	background-repeat: no-repeat;
+	position: relative;
+	width: 960px;
+	height: 356px;
+}
+
+.slidearea .slidetext {
+	position: absolute;
+	top: 60px;
+	font-family: 'Raleway', sans-serif;
+	width: 380px;
+	padding: 0 0 30px 20px;
+	right: 20px;
+}
+
+.slidearea .slidetext .slidetextbg {
+	background-color: #000;
+	width: 420px;
+	height: 231px;
+	position: absolute;
+	opacity: 0.5;
+	z-index: 3;
+	margin-left: -20px;
+	margin-top: -20px;
+}
+
+.slidearea .slidetext .title {
+	margin: 0px;
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 22px;
+	padding-bottom: 5px;
+	position: relative;
+	z-index: 3;
+	font-weight: normal;
+}
+
+.slidearea .slidetext .subtitle {
+	margin: 0px;
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 22px;
+	position: relative;
+	z-index: 3;
+}
+
+.slidearea .slidetext .description {
+	font-size: 16px;
+	line-height: 20px;
+	width: 350px;
+	padding-top: 20px;
+	text-align: left;
+	margin-bottom: 10px;
+	position: relative;
+	z-index: 3;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.slidearea .slidetext .link {
+	padding-top: 15px;
+	position: relative;
+	z-index: 3;
+}
+
+.slidearea .slidetext .link a {
+	font-size: 14px;
+	padding: 7px;
+	border-radius: 7px;
+}
+
+.slidearea .slidetext .link a:hover {
+}
+/* Animation */
+
+/* Side Nav */
+#SideNav {
+}
+
+.SideNavHeader {
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	text-transform: capitalize;
+	font-weight: 500;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-top: 10px;
+}
+
+.SideNavHeader span {
+	font-size: 16px;
+	text-transform: none;
+	font-weight: normal;
+}
+
+.SideNavSubHeader {
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	padding-bottom: 10px;
+}
+
+.SideNavBox {
+	width: 300px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
+
+.SideNavBox ul {
+	list-style: none;
+	padding: 0px;
+	margin: 10px 0px 0px;
+}
+
+.SideNavBox li {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+.SideNavBox .separator {
+	height: 1px;
+}
+
+.SideNavBox .side a {
+	display: block;
+	height: 28px;
+	line-height: 28px;
+	padding-left: 40px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 12px;
+	border-radius: 3px;
+	position: relative;
+	text-transform: uppercase;
+	padding: 5px 0 5px 25px;
+}
+
+.SideNavBox .side a:hover {
+}
+
+.SideNavBox .side a .arrow {
+	position: absolute;
+	left: 15px;
+	top: -4px;
+	font-size: 30px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+}
+
+.SideNavButton {
+	margin-left: 20px;
+	margin-top: 5px;
+}
+
+.SideNavButton a {
+	width: 115px;
+	height: 24px;
+	display: block;
+	line-height: 24px;
+	text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	float: right;
+	margin-right: 22px;
+}
+/* Side Nav */
+
+/* Blog Styles */
+#BlogFeed {
+	margin-bottom: 15px;
+}
+
+#BlogFeed .feed {
+	padding-left: 25px;
+}
+
+.feed .post {
+	width: 180px;
+	border-radius: 3px;
+	padding: 5px 0px 20px 20px;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.feed .post a {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 700;
+}
+
+.feed .post a span {
+	font-size: 12px;
+	line-height: 14px;
+}
+/* Blog Styles */
+
+/* Contact Form */
+.ContactMargin {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.ContactMargin input, .ContactMargin textarea {
+	width: 251px;
+	height: 24px;
+	margin: 3px 0px;
+	padding-left: 7px;
+	font-size: 12px;
+	outline: none;
+	margin-left: 20px;
+	font-family: Myriad Pro, OpenSans, Arial, sans-serif;
+}
+
+.ContactMargin textarea {
+	height: 65px;
+	padding-top: 10px;
+	resize: none;
+	padding-right: 0px;
+}
+/* Contact Form */
+
+/* External Buttons */
+div.extBtn a {
+	font-family: TrajanPro, serif;
+	color: #FFF;
+	background-color: #013842;
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	border-radius: 5px;
+	padding: 22px 0;
+	border: 2px solid #88b7c0;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: 10px 0;
+}
+
+div.extBtn a:hover {
+	background-color: #80b1ba;
+}
+
+#BlogBtn a {
+	background-image: url(/images/blog.png);
+	background-size: 104px 68px;
+}
+/* External Buttons */
+
+/* Footer Styles */
+#FooterContent {
+	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	padding-top: 20px;
+}
+
+#FooterContent .left {
+	float: left;
+	width: 20%;
+}
+
+#FooterContent .FooterNav {
+	float: left;
+	width: 100%;
+}
+
+#FooterContent .FooterNav p {
+	width: 100%;
+	padding: 0px 30px;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+#FooterContent .left ul {
+	margin: 0px;
+	padding: 0px 10px;
+	list-style: none;
+}
+
+#FooterContent .left ul li {
+	width: 90%;
+}
+
+#FooterContent .left ul li a {
+	line-height: 22px;
+	padding-left: 20px;
+}
+
+#FooterContent .left ul li a:hover {
+}
+
+#FooterContent .middle {
+	float: left;
+	width: 39%;
+}
+
+#FooterContent .middle a {
+}
+
+#FooterContent .middle a img {
+	padding-bottom: 20px;
+}
+
+#FooterContent .middle .phone {
+	font-size: 20px;
+}
+
+#FooterContent .right {
+	float: right;
+	width: 35%;
+	text-align: right;
+}
+
+#FooterContent .right .text {
+	font-size: 13px;
+}
+
+#FooterContent .right .call {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#FooterContent .right .phone {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#FooterContent .right span {
+	display: inline-block;
+	margin-bottom: 7px;
+}
+
+#FooterContent .right .serving {
+	display: block;
+	margin-bottom: 7px;
+}
+
+#SocialLinksTop {
+	width: auto;
+	height: 27px;
+	padding-top: 10px;
+	float: left;
+}
+
+.SocialLinks h5 {
+	margin: 0px 0px 0px 0px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 36px;
+	height: 40px;
+	padding-top: 10px;
+}
+
+.SocialLinks a icon {
+	font-size: 21px;
+	margin-left: 5px;
+}
+
+#SocialLinksTop a:link icon, #SocialLinksTop a:visited icon {
+	color: #FFFFFF;
+}
+
+#SocialLinks a:link icon, #SocialLinks a:visited icon {
+	color: #FFFFFF;
+}
+
+#SocialLinksTop a:hover icon.facebook {
+	color: #B6CCF8!important;
+}
+
+#SocialLinksTop.SocialLinks a:hover icon.twitter {
+	color: #33ccff!important;
+}
+
+#SocialLinksTop a:hover icon.youtube {
+	color: #c83135!important;
+}
+
+#SocialLinksTop a:hover icon.yelp {
+	color: #c92413!important;
+}
+
+#SocialLinks a:hover icon {
+	color: #f5e060;
+}
+
+#FooterZone .right p.priv_sm a {
+	color: #FFF;
+}
+
+#FooterZone .right p.priv_sm a:hover {
+	color: #44a9a1;
+}
+
+#Payments h5 {
+	margin: 10px 0px 0px 0px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 32px;
+}
+
+#Payments {
+	width: auto;
+	height: 30px;
+	top: 120px;
+	right: 0px;
+	margin-top: 10px;
+}
+
+#Payments img {
+	float: right;
+	background-image: url(/shared/images2/CreditCards.png);
+	width: 40px;
+	height: 29px;
+	margin: 0px 5px 0px 0px;
+	background-repeat: no-repeat;
+}
+
+#Payments img.visa {
+	background-position: 0px 0px;
+}
+
+#Payments img.amex {
+	background-position: -80px 0px;
+}
+
+#Payments img.mastercard {
+	background-position: -38px 0px;
+}
+
+#Payments img.discover {
+	background-position: -118px 0px;
+}
+/* Footer Styles */
+
+/* Layout Styles */
+#TopSection {
+}
+
+#TopBannerZone {
+	margin: 0px auto;
+}
+
+#TopNavZone {
+	margin: 0px auto;
+}
+
+#FlashArea {
+	height: 360px;
+}
+
+#FlashZone {
+	width: 960px;
+	margin: 0px auto;
+}
+
+#TopCTAZone {
+	margin: 0px auto;
+	background-image: url(/images/tcta_bg.jpg);
+}
+
+#MainSection {
+}
+
+#MainArea {
+	width: 960px;
+	margin: 0px auto;
+	padding: 20px 0px;
+}
+
+#SideZone {
+	float: left;
+	width: 300px;
+}
+
+#MainZone {
+	float: right;
+	width: 620px;
+}
+
+#BottomSection {
+	height: 250px;
+	background-position: bottom left;
+	background-repeat: repeat-x;
+}
+
+#FooterZone {
+	width: 960px;
+	margin: 0px auto;
+}
+/* Layout Styles */
+
+/* RL Logo */
+#BrandZone {
+	height: 80px;
+	font-family: Arial;
+	font-size: 12px;
+	line-height: 80px;
+}
+
+#BrandZone.dark {
+}
+
+#BrandZone.light {
+}
+
+#BrandContent {
+	width: 960px;
+	margin: 0px auto;
+	height: 80px;
+	position: relative;
+}
+
+#BrandContent img {
+	width: 164px;
+	height: 60px;
+	position: absolute;
+	right: 0px;
+	top: 10px;
+}
+
+.dark #BrandContent img {
+	background-image: url(/shared/images2/rl/WhiteLogo.png);
+}
+
+.light #BrandContent img {
+	background-image: url(/shared/images2/rl/DarkLogo.png);
+}
+/* RL Logo */
+
+div.homerss {
+	font-family: 'Raleway', Arial;
+	font-size: 14px;
+	position: relative;
+	width: 310px;
+	padding: 10px 0px 20px 0px;
+	margin-top: 40px;
+	overflow: hidden;
+	color: #3D3D3D;
+}
+
+div.homerss h3 {
+	color: #026475;
+	font-weight: normal;
+	font-size: 26px;
+	padding: 5px 20px 5px;
+	text-align: left;
+	text-transform: none;
+	margin: 0px;
+}
+
+div.homerss div.dataheader {
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+div.homerss div.data {
+	padding: 10px 20px 5px 20px;
+	line-height: 18px;
+	font-style: normal;
+	background-repeat: repeat-x;
+	background-position: bottom left;
+	width: 240px;
+	margin: 5px 0px 2px;
+	color: #013842;
+	font-size: 12px;
+}
+
+div.homerss div.data span {
+	padding: 0px 0px 4px 0px;
+	font-weight: normal;
+	display: block;
+	font-family: 'Carrois Gothic', Arial;
+}
+
+div.homerss div.data a {
+	font-family: 'Raleway', Arial;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 20px;
+	margin-top: 5px;
+	display: block;
+	font-weight: 400;
+	color: #1b9fb6;
+}
+
+div.homerss div.data a:hover {
+	text-decoration: underline;
+}
