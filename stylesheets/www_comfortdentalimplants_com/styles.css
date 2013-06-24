@@ -28,20 +28,20 @@ textarea{font-family:Arial;}
 				this.style.behavior = "none"
 			);
 	}
-	
+
 	img.creditcard {
 		width:40px;
 		height:29px;
 		border:none;
-		background:url(/Shared/images2/CreditCards.png) no-repeat 0px 0px;
-		_background:url(/Shared/images2/CreditCards.gif) no-repeat 0px 0px;
+		background:url(http://jwreachlocal.github.io/scorpion/images/www_comfortdentalimplants_com/CreditCards.png) no-repeat 0px 0px;
+		_background:url(http://jwreachlocal.github.io/scorpion/images/www_comfortdentalimplants_com/CreditCards.gif) no-repeat 0px 0px;
 	}
 	img.creditcard.Visa				{ background-position:   0px 0px; }
 	img.creditcard.MasterCard		{ background-position: -40px 0px; }
 	img.creditcard.American-Express	{ background-position: -80px 0px; }
 	img.creditcard.Discover			{ background-position:-120px 0px; }
 	img.creditcard.Diners_Club		{ background-position:-160px 0px; }
-	
+
 	span.validator {
 		font-weight:bold;
 		color:#AA0000;
@@ -52,7 +52,7 @@ textarea{font-family:Arial;}
 		background-color:#ffffff;
 		font-family:Arial;
 	}
-	
+
 	div.ui-dialog div.ui-dialog-additional {
 		position:absolute;
 		background-color:#ffffff;
@@ -228,7 +228,7 @@ textarea{font-family:Arial;}
 		font:bold italic 13px/17px Arial;
 		color:#955d4b;
 	}
-	
+
 	div.ui-widget-overlay {
 		position:absolute;
 		top:0px;
@@ -328,7 +328,7 @@ textarea{font-family:Arial;}
 		background:#efefef;
 		border-radius:5px;
 	}
-	
+
 	div.ui-dialog-buttonpane a.ui-button.active:hover {
 	}
 
@@ -359,7 +359,7 @@ textarea{font-family:Arial;}
 		height:50px;
 		border:solid 1px #999;
 	}
-	
+
 	div.ui-widget-loading.css2 div.ui-widget-loading1 {
 		display:none;
 	}
@@ -375,7 +375,7 @@ textarea{font-family:Arial;}
 		height:50px;
 		position:absolute;
 	}
-	
+
 	div.ui-widget-loading.css3 div.ui-widget-loading1 {
 		background-color: rgba(0,0,0,0);
 		border:5px solid rgba(22,180,254,0.9);
@@ -403,7 +403,7 @@ textarea{font-family:Arial;}
 		border-left:5px solid rgba(0,0,0,0);
 		border-right:5px solid rgba(0,0,0,0);
 		border-radius:20px;
-		box-shadow: 0 0 15px #3ec2ff; 
+		box-shadow: 0 0 15px #3ec2ff;
 		width:20px;
 		height:20px;
 		position:absolute;
@@ -475,7 +475,7 @@ textarea{font-family:Arial;}
 		z-index:0;
 		_display:none;
 	}
-	
+
 	div.ui-resizable-se {
 		display: block;
 		width: 11px;
@@ -485,7 +485,7 @@ textarea{font-family:Arial;}
 		bottom: 2px;
 		background:url(/Admin/images2/wizard/Resize.gif) no-repeat 0px 0px;
 		cursor:se-resize;
-		
+
 	}
 
 	div.ui-tooltip {
@@ -768,7 +768,7 @@ textarea{font-family:Arial;}
 		font:normal 12px/16px Arial;
 		color:#d7d7d7;
 	}
-	
+
 	div.ui-dialog div.vv-main.White div.vv-details h3 {
 		color:#4083bc;
 	}
@@ -776,7 +776,7 @@ textarea{font-family:Arial;}
 	div.ui-dialog div.vv-main.White div.vv-details div {
 		color:#5391c6;
 	}
-	
+
 	div.ui-dialog div.vv-main div.vv-buttons {
 		position:absolute;
 		top:205px;
@@ -811,13 +811,13 @@ textarea{font-family:Arial;}
 		height:40px;
 		margin:5px 0px 0px 0px;
 	}
-	
+
 	div.ui-dialog div.vv-main div.vv-buttons a.vv-next {
 		width:101px;
 		height:40px;
 		margin:5px 0px 0px 5px;
 	}
-	
+
 	div.ui-dialog div.vv-main div.vv-categories {
 		position:absolute;
 		top:320px;
@@ -885,7 +885,7 @@ textarea{font-family:Arial;}
 		top:0px;
 		left:-1px;
 	}
-	
+
 	div.ui-dialog div.vv-main.Tan div.vv-categories div.vv-panel div.vv-scroller div.vv-category:hover {
 		background-position:0px 0px;
 	}
@@ -893,7 +893,7 @@ textarea{font-family:Arial;}
 	div.ui-dialog div.vv-main.Tan div.vv-categories div.vv-panel div.vv-scroller div.vv-category.active {
 		background-position:0px -0px;
 	}
-	
+
 	div.ui-dialog div.vv-main.Green div.vv-categories div.vv-panel div.vv-scroller div.vv-category:hover {
 		background-position:0px -40px;
 	}
@@ -901,7 +901,7 @@ textarea{font-family:Arial;}
 	div.ui-dialog div.vv-main.Green div.vv-categories div.vv-panel div.vv-scroller div.vv-category.active {
 		background-position:0px -40px;
 	}
-	
+
 	div.ui-dialog div.vv-main.Gray div.vv-categories div.vv-panel div.vv-scroller div.vv-category:hover {
 		background-position:0px -80px;
 	}
@@ -909,7 +909,7 @@ textarea{font-family:Arial;}
 	div.ui-dialog div.vv-main.Gray div.vv-categories div.vv-panel div.vv-scroller div.vv-category.active {
 		background-position:0px -80px;
 	}
-	
+
 	div.ui-dialog div.vv-main.Red div.vv-categories div.vv-panel div.vv-scroller div.vv-category:hover {
 		background-position:0px -120px;
 	}
@@ -917,7 +917,7 @@ textarea{font-family:Arial;}
 	div.ui-dialog div.vv-main.Red div.vv-categories div.vv-panel div.vv-scroller div.vv-category.active {
 		background-position:0px -120px;
 	}
-	
+
 	div.ui-dialog div.vv-main.Blue div.vv-categories div.vv-panel div.vv-scroller div.vv-category:hover {
 		background-position:0px -160px;
 	}
@@ -925,7 +925,7 @@ textarea{font-family:Arial;}
 	div.ui-dialog div.vv-main.Blue div.vv-categories div.vv-panel div.vv-scroller div.vv-category.active {
 		background-position:0px -160px;
 	}
-	
+
 	div.ui-dialog div.vv-main.Black div.vv-categories div.vv-panel div.vv-scroller div.vv-category:hover {
 		background-position:0px -200px;
 	}
@@ -933,7 +933,7 @@ textarea{font-family:Arial;}
 	div.ui-dialog div.vv-main.Black div.vv-categories div.vv-panel div.vv-scroller div.vv-category.active {
 		background-position:0px -200px;
 	}
-	
+
 	div.ui-dialog div.vv-main.White div.vv-categories div.vv-panel div.vv-scroller div.vv-category:hover {
 		background-position:0px -240px;
 	}
@@ -1046,7 +1046,7 @@ textarea{font-family:Arial;}
 	div.ui-dialog div.vv-main div.vv-videos div.vv-coverflow div.vv-scroller div.vv-thumb div.active {
 		background-position: 0px 0px;
 	}
-	
+
 	div.ui-dialog div.vv-main div.vv-videos div.vv-coverflow div.vv-title {
 		position: absolute;
 		bottom: 7px;
@@ -1055,7 +1055,7 @@ textarea{font-family:Arial;}
 		font:normal 12px/12px Arial;
 		color:#ffffff;
 	}
-	
+
 	div.ui-dialog div.vv-main div.vv-videos a.vv-next {
 		display:block;
 		zoom:1;
@@ -1086,7 +1086,7 @@ textarea{font-family:Arial;}
 		left: 0px;
 		top: 0px;
 	}
-	
+
 	div.cms-lightbox div.cms-lightbox-nav {
 		position:absolute;
 		top: 25px;
@@ -1109,7 +1109,7 @@ textarea{font-family:Arial;}
 		-moz-border-radius:2px;
 		-webkit-border-radius:2px;
 	}
-	
+
 	div.cms-lightbox div.cms-lightbox-nav.next {
 		left: auto;
 		right: 0px;
@@ -1291,7 +1291,7 @@ div.cms-lightbox2-caption {
 	background-color:rgba(0,0,0,.8);
 	background-color:#000000\9;
 }
-	
+
 div.cms-lightbox2 div.cms-lightbox2-nav {
 	position:absolute;
 	top: 0px;
@@ -1425,7 +1425,7 @@ div.cms-lightboxm div.cms-lightbox2-image div {
 	background-position:center center;
 	background-size:contain;
 }
-	
+
 div.cms-lightboxm div.cms-lightboxm-navbar {
 	position:absolute;
 	bottom:0px;
@@ -1482,11 +1482,11 @@ body.mobile-landscape div.cms-lightboxm div.cms-lightboxm-navbar {
 		padding:0px 10px 10px 10px;
 		font:normal 12px/12px Arial;
 	}
-		
+
 	div.ui-datepicker div {
 		color:#505050;
 	}
-		
+
 	div.ui-datepicker div.ui-date {
 		width:218px;
 		height:285px;
@@ -1535,7 +1535,7 @@ body.mobile-landscape div.cms-lightboxm div.cms-lightboxm-navbar {
 	div.ui-datepicker div.ui-date div.ui-years div.ui-list div.ui-pop.right {
 		left:-54px;
 	}
-		
+
 	div.ui-datepicker div div div {
 		float:left;
 		padding:3px 5px;
@@ -1636,7 +1636,7 @@ body.mobile-landscape div.cms-lightboxm div.cms-lightboxm-navbar {
 		padding:8px 0px 2px 0px;
 		width:30px;
 	}
-	
+
 	div.ui-datepicker div.ui-title a.ui-today {
 		margin:0px;
 		padding:0px;
@@ -1649,13 +1649,13 @@ body.mobile-landscape div.cms-lightboxm div.cms-lightboxm-navbar {
 		color:#15416d;
 		text-decoration:underline;
 	}
-	
+
 	div.ui-datepicker.mask div div div {
 		color:#cdd9e5;
 		border-color:#e0e9f1;
 		background:#f9fcff;
 	}
-	
+
 	div.ui-datepicker.mask div div.ui-title {
 		color:#cccccc;
 	}
@@ -1665,7 +1665,7 @@ body.mobile-landscape div.cms-lightboxm div.cms-lightboxm-navbar {
 		border-color:#ccc;
 		color:#ccc;
 	}
-	
+
 	div.ui-datepicker.mask div.ui-date div.ui-days div.disabled {
 		background:#fff;
 		border-color:#f2f2f2;
@@ -1771,7 +1771,7 @@ body.mobile-landscape div.cms-lightboxm div.cms-lightboxm-navbar {
 		color:#404040;
 		text-decoration:none;
 	}
-	
+
 	div.sp-main div.sp-suggest {
 		position:absolute;
 		right:10px;
@@ -1790,7 +1790,7 @@ body.mobile-landscape div.cms-lightboxm div.cms-lightboxm-navbar {
 		word-wrap:break-word;
 		word-break:break-all;
 	}
-	
+
 	div.sp-main div.sp-suggest a {
 		display:block;
 		float:left;
@@ -1836,13 +1836,13 @@ body.mobile-landscape div.cms-lightboxm div.cms-lightboxm-navbar {
 		padding:0px;
 		position:relative;
 	}
-	
+
 	body div.ck-editor-code {
 		background-color:#ffffff;
 		border:solid 1px #cccccc;
 		display:none;
 	}
-	
+
 	body div.ck-editor-bottom {
 		height:auto;
 		border-top:none;
@@ -1954,7 +1954,7 @@ table.nospacing { border-collapse:separate !important;border-spacing:0 !importan
 		color:white;
 		margin:0px;
 	}
-	
+
 	img.itr {
 		display:inline;
 		border:none;
@@ -2019,7 +2019,7 @@ table.nospacing { border-collapse:separate !important;border-spacing:0 !importan
 	img.itr_search:hover	{ background-position:-22px -220px; }
 	img.itr_folder.itr_hidden{ background-position:-44px -220px; }
 	img.itr_anchor			{ background-position:-66px -220px; }
-	
+
 	img.itr_feed			{ background-position:  0px -242px; }
 	img.itr_video			{ background-position:-22px -242px; }
 	img.itr_clock			{ background-position:-44px -242px; }
@@ -2042,7 +2042,7 @@ table.nospacing { border-collapse:separate !important;border-spacing:0 !importan
 	}
 	li:hover>a>img.itr_check	{ background-position:-316px -167px; }
 	li.checked img.itr_check	{ background-position:-300px -167px !important; }
-	
+
 	sup.itr
 	{
 		font-size:10px;
@@ -2062,7 +2062,7 @@ table.nospacing { border-collapse:separate !important;border-spacing:0 !importan
 	div.cc-images img.American-Express {background-position:-78px 0px;}
 	div.cc-images img.Discover {background-position:-117px 0px;}
 	div.cc-images img.Diners_Club {background-position:-156px 0px;}
-	
+
 /* Review Links Styles*/
 	div.reviews div.item {
 		padding: 10px;
@@ -2219,7 +2219,7 @@ table.nospacing { border-collapse:separate !important;border-spacing:0 !importan
 	div.reviews div.item div.Yelp {
 		background-position: -200px -200px;
 	}
-/*End Review Links Styles*/	
+/*End Review Links Styles*/
 
 
 /* ICOMoon Social Icons */

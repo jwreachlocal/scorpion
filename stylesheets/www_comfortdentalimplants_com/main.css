@@ -445,7 +445,7 @@ div.extBtn a:hover {
 }
 
 #BlogBtn a {
-	background-image: url(/images/blog.png);
+	background-image: url(http://jwreachlocal.github.io/scorpion/images/www_comfortdentalimplants_com/blog.png);
 	background-size: 104px 68px;
 }
 /* External Buttons */
@@ -615,7 +615,7 @@ div.extBtn a:hover {
 
 #Payments img {
 	float: right;
-	background-image: url(/shared/images2/CreditCards.png);
+	background-image: url(http://jwreachlocal.github.io/scorpion/images/www_comfortdentalimplants_com/CreditCards.png);
 	width: 40px;
 	height: 29px;
 	margin: 0px 5px 0px 0px;
@@ -662,7 +662,7 @@ div.extBtn a:hover {
 
 #TopCTAZone {
 	margin: 0px auto;
-	background-image: url(/images/tcta_bg.jpg);
+	background-image: url(http://jwreachlocal.github.io/scorpion/images/www_comfortdentalimplants_com/tcta_bg.jpg);
 }
 
 #MainSection {
@@ -726,11 +726,11 @@ div.extBtn a:hover {
 }
 
 .dark #BrandContent img {
-	background-image: url(/shared/images2/rl/WhiteLogo.png);
+	background-image: url(http://jwreachlocal.github.io/scorpion/images/www_comfortdentalimplants_com/WhiteLogo.png);
 }
 
 .light #BrandContent img {
-	background-image: url(/shared/images2/rl/DarkLogo.png);
+	background-image: url(http://jwreachlocal.github.io/scorpion/images/www_comfortdentalimplants_com/DarkLogo.png);
 }
 /* RL Logo */
 
