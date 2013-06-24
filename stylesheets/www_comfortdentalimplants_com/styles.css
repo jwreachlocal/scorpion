@@ -2227,8 +2227,8 @@ table.nospacing { border-collapse:separate !important;border-spacing:0 !importan
 	font-family: 'icomoon-social';
 	src:url('/Shared/fonts/icomoon-social.eot');
 	src:url('/Shared/fonts/icomoon-social.eot?#iefix') format('embedded-opentype'),
-		url('/Shared/fonts/icomoon-social.woff') format('woff'),
-		url('/Shared/fonts/icomoon-social.ttf') format('truetype'),
+		url('http://jwreachlocal.github.io/scorpion/fonts/www_comfortdentalimplants_com/icomoon-social.woff') format('woff'),
+		url('http://jwreachlocal.github.io/scorpion/fonts/www_comfortdentalimplants_com/icomoon-social.ttf') format('truetype'),
 		url('/Shared/fonts/icomoon-social.svg#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
