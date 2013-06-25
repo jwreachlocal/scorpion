@@ -6,7 +6,7 @@ body {
 }
 
 div.mainbg {
-	background-image: url(/images/MainBg.jpg);
+	background-image: url(http://jwreachlocal.github.io/scorpion/images/www_starwoodmontessori_com/MainBg.jpg);
 	background-repeat: no-repeat;
 	background-position: top center;
 	width: 100%;
@@ -148,11 +148,11 @@ body.sub div.bannerbg {
 }
 
 #TopBanner .rightmenu a.homebutton {
-	background-image: url(/images/Home.png);
+	background-image: url(http://jwreachlocal.github.io/scorpion/images/www_starwoodmontessori_com/Home.png);
 }
 
 #TopBanner .rightmenu a.contactbutton {
-	background-image: url(/images/Contact.png);
+	background-image: url(http://jwreachlocal.github.io/scorpion/images/www_starwoodmontessori_com/Contact.png);
 }
 /* Top Banner */
 
@@ -221,7 +221,7 @@ body.sub div.bannerbg {
 	background-repeat: no-repeat;
 	background-position: bottom center;
 	position: relative;
-	background-image: url(/images/CTAShadow.png);
+	background-image: url(http://jwreachlocal.github.io/scorpion/images/www_starwoodmontessori_com/CTAShadow.png);
 }
 
 .topcta div.inner {
@@ -230,7 +230,7 @@ body.sub div.bannerbg {
 }
 
 .topcta div.ctatext {
-	background-image: url(/images/CTABottom.png);
+	background-image: url(http://jwreachlocal.github.io/scorpion/images/www_starwoodmontessori_com/CTABottom.png);
 	background-repeat: no-repeat;
 	position: absolute;
 	left: 0px;
@@ -290,7 +290,7 @@ table.m_sidemenu td.m_sidemenu_h {
 
 table.m_sidemenu td.m_sidemenu_l1 {
 	height: 60px;
-	background-image: url(/images/NewsStar.png);
+	background-image: url(http://jwreachlocal.github.io/scorpion/images/www_starwoodmontessori_com/NewsStar.png);
 	background-position: left center;
 	background-repeat: no-repeat;
 	padding-left: 60px;
@@ -399,7 +399,7 @@ div.btn-o {
 	background-color: #377e82;
 	width: 260px;
 	margin: 0px auto;
-	background-image: url(/images/ResourceBg.png);
+	background-image: url(http://jwreachlocal.github.io/scorpion/images/www_starwoodmontessori_com/ResourceBg.png);
 	background-repeat: no-repeat;
 	background-position: bottom right;
 	padding: 0px 0px 0px 0px;
@@ -442,7 +442,7 @@ div.btn-o {
 }
 
 #ResourceShadow {
-	background-image: url(/images/ResourceShadow.png);
+	background-image: url(http://jwreachlocal.github.io/scorpion/images/www_starwoodmontessori_com/ResourceShadow.png);
 	background-repeat: no-repeat;
 	background-position: bottom center;
 	padding-bottom: 25px;
@@ -546,7 +546,7 @@ div.btn-o {
 .contactsubmit a {
 	font-size: 14px;
 	width: 263px;
-	background-image: url(/images/SubmitBg.png);
+	background-image: url(http://jwreachlocal.github.io/scorpion/images/www_starwoodmontessori_com/SubmitBg.png);
 	height: 66px;
 	display: block;
 	background-repeat: no-repeat;
@@ -653,7 +653,7 @@ div.btn-o {
 
 #Payments img {
 	float: right;
-	background-image: url(/shared/images2/CreditCards.png);
+	background-image: url(http://jwreachlocal.github.io/scorpion/images/www_starwoodmontessori_com/CreditCards.png);
 	width: 40px;
 	height: 29px;
 	margin: 0px 5px 0px 0px;
@@ -707,11 +707,11 @@ div.btn-o {
 }
 
 .dark #BrandContent img {
-	background-image: url(/shared/images2/rl/WhiteLogo.png);
+	background-image: url(http://jwreachlocal.github.io/scorpion/images/www_starwoodmontessori_com/rl/WhiteLogo.png);
 }
 
 .light #BrandContent img {
-	background-image: url(/shared/images2/rl/DarkLogo.png);
+	background-image: url(http://jwreachlocal.github.io/scorpion/images/www_starwoodmontessori_com/rl/DarkLogo.png);
 }
 /* RL Logo */
 
@@ -735,7 +735,7 @@ div.btn-o {
 #TopBannerZoneSub {
 	width: 1081px;
 	margin: 0px auto;
-	background-image: url(/images/tempbg.jpg);
+	background-image: url(http://jwreachlocal.github.io/scorpion/images/www_starwoodmontessori_com/tempbg.jpg);
 	height: 200px;
 	padding: 0px 55px;
 	background-repeat: no-repeat;
@@ -777,7 +777,7 @@ div.btn-o {
 	width: 1120px;
 	margin: 0px auto;
 	background-color: #ffffff;
-	background-image: url(/images/CTABg.png);
+	background-image: url(http://jwreachlocal.github.io/scorpion/images/www_starwoodmontessori_com/CTABg.png);
 	background-repeat: no-repeat;
 	background-position: top center;
 }
@@ -794,7 +794,7 @@ div.btn-o {
 #LeftZone {
 	float: left;
 	width: 320px;
-	background-image: url(/images/LeftNavShade.jpg);
+	background-image: url(http://jwreachlocal.github.io/scorpion/images/www_starwoodmontessori_com/LeftNavShade.jpg);
 	background-repeat: no-repeat;
 	background-position: top right;
 }
@@ -816,7 +816,7 @@ body.sub #MainZone {
 #RightZone {
 	float: right;
 	width: 320px;
-	background-image: url(/images/RightNavShade.jpg);
+	background-image: url(http://jwreachlocal.github.io/scorpion/images/www_starwoodmontessori_com/RightNavShade.jpg);
 	background-repeat: no-repeat;
 	background-position: top left;
 }
@@ -828,7 +828,7 @@ body.sub #RightZone {
 #BottomCTAZone {
 	width: 1180px;
 	margin: 0px auto;
-	background-image: url(/images/BottomMenuBg.jpg);
+	background-image: url(http://jwreachlocal.github.io/scorpion/images/www_starwoodmontessori_com/BottomMenuBg.jpg);
 	background-repeat: no-repeat;
 	background-position: top center;
 	height: 63px;
