@@ -1,0 +1,179 @@
+a {
+	color: #3BAAB0;
+}
+
+a:hover {
+	color: #555;
+	text-decoration: underline;
+}
+
+#TopBanner div span a {
+	color: #fff;
+}
+
+#MainContent {
+}
+
+.topcta .link {
+	color: #fff;
+}
+
+.SideNavHeader {
+	color: #d84b34;
+}
+
+.SideNavSubHeader {
+	color: #fff;
+	background-color: #bb3926;
+}
+
+.SideNavBox .side a {
+	color: #010101;
+	background-color: #e3e3e3;
+}
+
+.SideNavBox .side a:hover {
+	color: #FFFFFF;
+	background-color: #bb3926;
+}
+
+.SideNavButton a {
+	background-color: #d33c23;
+	color: #fff;
+}
+
+.RSideNavSubHeader {
+}
+
+.RSideNavButton a {
+}
+
+.feed .post a {
+	background-color: #e3e3e3;
+}
+
+.feed .post a:hover {
+	color: #fff;
+}
+
+.feed .post a .date {
+	color: #949494;
+}
+
+.feed .post a .title {
+	color: #d33c23;
+}
+
+.feed .post a:hover .title {
+	color: #444;
+}
+
+.ContactMargin input, .ContactMargin textarea {
+	background-color: #d5d5d5;
+	color: #2f4671;
+	border: solid 1px #e3e3e3;
+	background: linear-gradient(to bottom, #d5d5d5 0%, #c5c5c5 100%);
+	background: -moz-linear-gradient(top, #d5d5d5 0%, #c5c5c5 100%);
+	background: -webkit-linear-gradient(top, #d5d5d5 0%, #c5c5c5 100%);
+	background: -o-linear-gradient(top, #d5d5d5 0%, #c5c5c5 100%);
+	background: -ms-linear-gradient(top, #d5d5d5 0%, #c5c5c5 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#d5d5d5', endColorStr='#c5c5c5',GradientType=0)\9;
+}
+
+#BottomCTAContent .banner {
+	background-color: #D7EAFF;
+}
+
+#BottomCTAContent .banner .left {
+	border-right: solid 19px #001c29;
+	border-bottom: solid 19px #001c29;
+}
+
+#BottomCTAContent .banner .right {
+	border-left: solid 19px #001c29;
+	border-bottom: solid 19px #001c29;
+}
+
+.bottomcta h5 {
+	color: #000;
+}
+
+.bottomcta .ctatext {
+	color: #4d4d4d;
+}
+
+.bottomcta .ctabutton {
+	color: #fff;
+	background-color: #D33C23;
+}
+
+.bottomcta:hover .ctabutton {
+	background-color: #D7EAFF;
+	color: #000;
+}
+
+#FooterContent {
+	color: #95a4bd;
+}
+
+#FooterContent h1, #FooterContent .header {
+	color: #95a4bd;
+}
+
+.FooterNav ul li a {
+	color: #fff;
+}
+
+.FooterNav ul li a:hover {
+	color: #d33c23;
+}
+
+#FooterContent .middle a {
+	color: #95a4bd;
+}
+
+#SocialLinks h5 {
+	color: #4D88A0;
+}
+
+#Payments h5 {
+	color: #fff;
+}
+
+#BrandZone.dark {
+	background-color: #333333;
+	color: #FFFFFF;
+}
+
+#BrandZone.light {
+	background-color: #ffffff;
+	color: #333333;
+}
+
+#TopSection {
+	background-color: #bb3926;
+}
+
+#MainSection {
+	background-color: #bb3926;
+}
+
+#MainAreaBG {
+	background-color: #fff;
+}
+
+#LeftFold {
+	border-top: solid 15px #4a0c02;
+	border-right: solid 15px #4a0c02;
+}
+
+#RightFold {
+	border-top: solid 14px #4a0c02;
+	border-left: solid 14px #4a0c02;
+}
+
+#BottomSection {
+	background-color: #2f415f;
+	border-top: solid 4px #377e82;
+	box-shadow: inset 0px 5px 10px #212E42;
+}
