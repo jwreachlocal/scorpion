@@ -2237,7 +2237,7 @@ table.nospacing { border-collapse:separate !important;border-spacing:0 !importan
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'icomoon-social';
-    src: url('/Shared/fonts/icomoon-social.svg') format('svg');
+    src: url('http://jwreachlocal.github.io/icomoon-social.svg') format('svg');
   }
 }
 
