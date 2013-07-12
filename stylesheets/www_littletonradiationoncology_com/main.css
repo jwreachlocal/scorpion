@@ -98,7 +98,7 @@ h3 {
 .sched {
 	color: #FFF;
 	background-color: #2c63b6;
-	background-image: url(http://jwreachlocal.github.io/scorpion/fonts/www_littletonradiationoncology_com/top-nav-bg.png);
+	background-image: url(http://jwreachlocal.github.io/scorpion/images/www_littletonradiationoncology_com/top-nav-bg.png);
 	padding: 4px 10px;
 	border-radius: 3px;
 	position: absolute;
@@ -118,7 +118,7 @@ h3 {
 	height: 42px;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
-	background-image: url(http://jwreachlocal.github.io/scorpion/fonts/www_littletonradiationoncology_com/top-nav-bg.png);
+	background-image: url(http://jwreachlocal.github.io/scorpion/images/www_littletonradiationoncology_com/top-nav-bg.png);
 	background-repeat: repeat-x;
 	position: relative;
 	z-index: 2;
