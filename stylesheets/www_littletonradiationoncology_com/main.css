@@ -1,0 +1,848 @@
+body {
+	font-family: Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+h2 {
+	font-family: 'Dosis', sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+h3 {
+	font-family: 'Dosis', sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+/* RL Logo */
+#BrandZone {
+	height: 80px;
+	font-family: Arial;
+	font-size: 12px;
+	line-height: 80px;
+}
+
+#BrandZone.dark {
+}
+
+#BrandZone.light {
+}
+
+#BrandContent {
+	width: 940px;
+	margin: 0px auto;
+	height: 80px;
+	position: relative;
+}
+
+#BrandContent img {
+	width: 164px;
+	height: 60px;
+	position: absolute;
+	right: 0px;
+	top: 10px;
+}
+
+.dark #BrandContent img {
+	background-image: url(/shared/images2/rl/WhiteLogo.png);
+}
+
+.light #BrandContent img {
+	background-image: url(/shared/images2/rl/DarkLogo.png);
+}
+/* RL Logo */
+
+/* Top Banner */
+#TopBanner {
+	text-align: right;
+	height: 83px;
+	position: relative;
+}
+
+#TopBanner .phone {
+	font-size: 15px;
+	font-weight: 400;
+	float: right;
+	height: 53px;
+}
+
+#TopBanner .phone .text {
+	float: left;
+	line-height: 53px;
+	padding-right: 10px;
+	vertical-align: bottom;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+
+#TopBanner .phone .num {
+	float: left;
+	font-size: 23px;
+	line-height: 45px;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+.sched {
+	color: #FFF;
+	background-color: #2c63b6;
+	background-image: url(/files/images/EyeDoc-1/top-nav-bg.png);
+	padding: 4px 10px;
+	border-radius: 3px;
+	position: absolute;
+	top: 52px;
+	right: 130px;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.sched:hover {
+	color: #46B0DE;
+}
+/* Top Banner */
+
+/* Top Nav */
+#TopNav {
+	height: 42px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	background-image: url(/files/images/EyeDoc-1/top-nav-bg.png);
+	background-repeat: repeat-x;
+	position: relative;
+	z-index: 2;
+	font-family: 'Dosis', sans-serif;
+}
+
+#TopNav .logo {
+	width: 238px;
+	height: 144px;
+	position: absolute;
+	top: -92px;
+	left: -4px;
+	text-align: center;
+}
+
+#TopNav .nav {
+	position: relative;
+	left: 230px;
+	height: 41px;
+	line-height: 42px;
+	width: 708px;
+}
+
+#TopNav .nav table {
+	width: 100%;
+	height: 100%;
+	margin: 0px auto;
+}
+
+#TopNav .nav td {
+	text-align: center;
+}
+
+#TopNav .nav .separator {
+	width: 1px;
+}
+
+#TopNav .nav a {
+	font-size: 14px;
+	display: block;
+	width: auto;
+	height: 100%;
+	line-height: 40px;
+	text-transform: uppercase;
+	padding: 0px 10px;
+}
+
+#TopNav .nav a:hover {
+}
+/* Top Nav */
+
+/* Animation */
+#Animation {
+	height: 288px;
+}
+
+#Animation .slidearea {
+	text-align: left;
+}
+
+#Animation .slidearea .slidetitle {
+	position: relative;
+	top: 85px;
+	left: 25px;
+}
+
+#Animation .slidearea .slidetitle h4,h5 {
+	margin: 0px;
+}
+
+#Animation .slidearea .slidetitle h4 {
+	font-size: 36px;
+	text-transform: none;
+	font-weight: normal;
+	font-family: 'Fjalla One', sans-serif;
+	line-height: 40px;
+}
+
+#Animation .slidearea .slidetitle h5 {
+	font-size: 36px;
+	text-transform: uppercase;
+	font-weight: normal;
+	line-height: 40px;
+	font-family: 'Fjalla One', sans-serif;
+	margin-top: 5px;
+}
+
+#Animation .slidearea .slidetext {
+	position: relative;
+	top: 75px;
+	width: 330px;
+	clear: both;
+	left: 26px;
+}
+
+#Animation .slidearea .slidetext .description {
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+}
+
+#Animation .slidearea .slidetext a {
+	font-size: 16px;
+	font-weight: 700;
+	font-family: Arial, sans-serif;
+}
+
+#Animation .slidearea .slidetext a:hover {
+}
+
+#Animation .slidearea .slidetext span {
+	display: inline-block;
+	width: 0px;
+	height: 0px;
+	border-top: solid 6px transparent;
+	border-right: solid 8px transparent;
+	border-bottom: solid 6px transparent;
+	margin-left: 7px;
+}
+/* Animation */
+
+/* CTA Styles */
+#TopCTAContent {
+	position: absolute;
+	z-index: 1;
+	top: 0px;
+	background-color: #CCE0EA;
+	padding-bottom: 15px;
+	padding-top: 10px;
+	width: 940px;
+}
+
+.topcta {
+	position: relative;
+	top: 0px;
+	width: 267px;
+	height: 115px;
+	background-color: rgba(255,255,255,.5);
+	background-color: #ffffff\9;
+	display: block;
+	float: left;
+	border-radius: 5px;
+	margin-left: 25px;
+	padding: 5px;
+}
+
+body.sub #TopCTAContent {
+	top: 30px;
+}
+
+.topcta:hover {
+}
+
+.topcta .box {
+	width: 267px;
+	height: 115px;
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+
+.topcta h5 {
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding-top: 10px;
+	padding-left: 10px;
+	font-weight: normal;
+}
+
+.topcta .ctainfo {
+	padding-left: 10px;
+	display: block;
+	width: 125px;
+	font-size: 13px;
+	margin-top: 10px;
+}
+
+.topcta .arrow {
+	position: absolute;
+	top: 90px;
+	right: 0px;
+	width: 0px;
+	border-top: solid 10px transparent;
+	border-right: solid 10px transparent;
+	border-bottom: solid 10px transparent;
+	height: 0px;
+}
+/* CTA Styles */
+
+/* Side Nav */
+#SideNav {
+}
+
+.SideNavHeader {
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 21px;
+	font-weight: normal;
+	padding-bottom: 10px;
+}
+
+.SideNavHeader span {
+	font-size: 13px;
+	text-transform: none;
+	font-weight: normal;
+	font-family: Arial, sans-serif;
+}
+
+.SideNavSubHeader {
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	padding-bottom: 10px;
+}
+
+.SideNavBoxList {
+	width: 267px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.SideNavBox {
+	width: 267px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.SideNavBox ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.SideNavBoxList ul {
+	padding: 10px 0px 10px 30px;
+	margin: 0;
+}
+
+.SideNavBoxList li {
+	padding: 5px 0px;
+	margin: 0px;
+	list-style: circle;
+	font-size: 13px;
+}
+
+.SideNavBoxList li span {
+	display: block;
+	width: 237px;
+	line-height: 18px;
+	font-family: Arial, sans-serf;
+	font-size: 14px;
+	padding: 3px 10px;
+}
+
+.SideNavBox li {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+.SideNavBox .separator {
+	height: 1px;
+}
+
+.SideNavBox .side a, .SideNavBox .side span {
+	display: block;
+	width: 237px;
+	line-height: 18px;
+	font-family: Arial, sans-serf;
+	font-size: 14px;
+	padding: 12px 10px 12px 20px;
+}
+
+.SideNavBox .side a:hover {
+}
+
+.SideNavButton {
+	margin-left: 20px;
+	margin-top: 5px;
+}
+
+.SideNavButton a {
+	width: 75px;
+	height: 31px;
+	display: block;
+	border-radius: 5px;
+	line-height: 31px;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+/* Side Nav */
+
+/* Blog Styles */
+#BlogFeed {
+	margin-bottom: 15px;
+}
+
+#BlogFeed .feed {
+}
+
+.feed .post {
+	width: 244px;
+	border-radius: 3px;
+	padding: 12px 0px 20px 25px;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.feed .post a {
+	font-family: 'Lato',sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	display: block;
+	padding-right: 10px;
+}
+
+.feed .post a span {
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.feed .post div.arrow {
+	position: absolute;
+	right: 0px;
+	bottom: 5px;
+	width: 0px;
+	height: 0px;
+	border-top: solid 5px transparent;
+	border-right: solid 5px transparent;
+	border-bottom: solid 5px transparent;
+}
+
+.item.blog h2 {
+	margin: 12px 0;
+}
+
+.item.blog .content {
+	margin-bottom: 12px;
+}
+
+.comments {
+	line-height: 34px;
+	margin-right: 8px;
+}
+
+span.blog_h {
+	display: block;
+	padding: 10px 0px 0px 0px;
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 21px;
+	font-weight: normal;
+	color: #9ce1ff;
+}
+
+.sidemenu {
+	background-color: #2e7aaf;
+	border: solid 5px #FFFFFF;
+	box-shadow: 0 0 6px -1px #333;
+	width: 238px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	padding: 0 10px;
+	color: #FFFFFF;
+}
+
+.sidemenu h2 {
+	font-size: 13px;
+	text-transform: none;
+	font-weight: normal;
+	font-family: Arial, sans-serif;
+	color: #FFFFFF;
+	margin: 10px 0 0px;
+}
+
+.sidemenu a {
+	color: #FFFFFF;
+}
+
+.sidemenu a:hover {
+	color: #9ce1ff;
+}
+
+.sidemenu .list {
+	padding: 5px 10px 5px 25px;
+	font-size: 12px;
+	margin: 4px 0;
+}
+
+.sidemenu .list li {
+	padding: 5px 0;
+}
+
+.sidemenu .list li .list {
+	padding-left: 13px;
+}
+/* Blog Styles */
+
+/* Contact Form */
+.ContactMargin {
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.ContactMargin input, .ContactMargin  textarea {
+	width: 214px;
+	height: 24px;
+	margin: 3px 0px;
+	padding-left: 7px;
+	border: none;
+	font-size: 13px;
+	outline: none;
+	margin-left: 20px;
+	border-radius: 3px;
+}
+
+.ContactMargin textarea {
+	height: 65px;
+	padding-top: 10px;
+	resize: none;
+	padding-right: 0px;
+}
+/* Contact Form */
+
+/* Footer Styles */
+#FooterContent {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	line-height: 24px;
+}
+
+#FooterContent .top {
+	height: 60px;
+}
+
+#FooterContent .top .left {
+	float: left;
+	width: 365px;
+	border: none;
+	height: 1px;
+	margin-top: 15px;
+}
+
+#FooterContent .top .logo {
+	float: left;
+	width: 210px;
+	text-align: center;
+}
+
+#FooterContent .top .right {
+	float: right;
+	width: 365px;
+	border: none;
+	height: 1px;
+	margin-top: 15px;
+}
+
+#FooterContent .bottom {
+	clear: both;
+}
+
+#FooterContent .bottom .left {
+	float: left;
+	width: 30%;
+}
+
+#FooterContent .FooterNav {
+	float: left;
+	width: 70%;
+}
+
+#FooterContent .bottom .left ul {
+	margin: 0px;
+	padding: 0px 10px;
+	list-style: none;
+}
+
+#FooterContent .bottom .left ul li {
+	width: 90%;
+}
+
+#FooterContent .bottom .left ul li a {
+}
+
+#FooterContent .bottom .left ul li a:hover {
+}
+
+#FooterContent .bottom .middle {
+	float: left;
+	width: 35%;
+}
+
+#FooterContent .bottom .middle a {
+}
+
+#FooterContent .bottom .middle .phone {
+	font-size: 22px;
+}
+
+#FooterContent .bottom .right {
+	float: right;
+	width: 25%;
+}
+
+#SocialLinks {
+	width: auto;
+	height: 50px;
+	top: 40px;
+	right: 0px;
+}
+
+#FooterContent .bottom .right .othersites p {
+	margin: 4px 0;
+	line-height: 14px;
+}
+
+#FooterContent .bottom .right .othersites ul {
+	padding: 5px 0 5px 15px;
+	margin: 0;
+}
+
+#SocialLinks h5 {
+	margin: 0px 0px 0px 0px;
+	font-family: 'Lato', Arial;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 32px;
+}
+
+#Payments h5 {
+	margin: 0px 0px 0px 0px;
+	font-family: 'Lato', Arial;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 32px;
+}
+
+#SocialLinks img {
+	float: left;
+	background-image: url(/shared/images2/addthis_big.png);
+	width: 32px;
+	height: 32px;
+	margin: 0px 10px 0px 0px;
+	background-position: -1px -320px;
+}
+
+#SocialLinks img.facebook {
+	background-position: 0px -160px;
+}
+
+#SocialLinks img.twitter {
+	background-position: 0px -672px;
+}
+
+#SocialLinks img.google {
+	background-position: 0px -288px;
+}
+
+#SocialLinks img.linkedin {
+	background-position: 0px -320px;
+}
+
+#SocialLinks img.youtube {
+}
+
+#Payments {
+	width: auto;
+	height: 80px;
+	top: 120px;
+	right: 0px;
+}
+
+#Payments img {
+	float: left;
+	background-image: url(/shared/images2/CreditCards.png);
+	width: 40px;
+	height: 29px;
+	margin: 0px 5px 0px 0px;
+	background-repeat: no-repeat;
+}
+
+#Payments img.visa {
+	background-position: 0px 0px;
+}
+
+#Payments img.amex {
+	background-position: -80px 0px;
+}
+
+#Payments img.mastercard {
+	background-position: -38px 0px;
+}
+
+#Payments img.discover {
+	background-position: -118px 0px;
+}
+/* Footer Styles */
+
+/* Layout Styles */
+#TopSection {
+	height: 407px;
+	position: relative;
+	z-index: 2;
+	background-image: url(/images/top_bg.jpg);
+	min-width: 100%;
+	min-height: 100%;
+}
+
+body.sub #TopSection {
+	height: 140px;
+}
+
+#TopBannerArea {
+	height: 95px;
+	width: 940px;
+	margin: 0px auto;
+	font-family: 'Dosis', sans-serif;
+}
+
+#TopBox {
+	width: 940px;
+	height: 334px;
+	margin: 0px auto;
+	border-radius: 3px;
+}
+
+body.sub #TopBox {
+	background-color: transparent;
+	height: 200px;
+}
+
+#MiddleSection {
+	padding-top: 173px;
+	position: relative;
+	z-index: 1;
+}
+
+body.sub #MiddleSection {
+	padding-top: 200px;
+}
+
+#MainArea {
+	width: 940px;
+	margin: 0px auto;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+#SideZone {
+	width: 285px;
+	float: left;
+	padding-left: 25px;
+	position: relative;
+	z-index: 2;
+}
+
+#MainZone {
+	width: 570px;
+	float: right;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	padding: 10px 30px 10px 20px;
+}
+
+#BottomSection {
+	height: 398px;
+	padding-bottom: 20px;
+}
+
+#FooterZone {
+	width: 940px;
+	margin: 0px auto;
+}
+/* Layout Styles */
+
+/* social media */
+#SocialLinksTop {
+	display: block;
+	clear: both;
+}
+
+.SocialLinks a icon {
+	font-size: 25px;
+	margin-left: 5px;
+	border-radius: 4px;
+}
+
+.SocialLinks a icon:hover {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+
+.SocialLinks a icon.facebook {
+	color: #3b5998;
+}
+
+.SocialLinks a icon.twitter {
+	color: #33ccff;
+}
+
+.SocialLinks a icon.vimeo {
+	color: #099EBF;
+}
+
+.SocialLinks a icon.pinterest {
+	color: #CB2028;
+}
+
+.SocialLinks a icon.google-plus {
+	color: #aa2924;
+}
+
+.SocialLinks a icon.tumblr {
+	color: #2B4B64;
+}
+
+.SocialLinks a icon.youtube {
+	color: #A4332E;
+}
+
+.SocialLinks a icon.yelp {
+	color: #c92413;
+}
+
+#TopCTAZone {
+	position: relative;
+}
