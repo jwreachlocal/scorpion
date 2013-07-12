@@ -57,11 +57,11 @@ h3 {
 }
 
 .dark #BrandContent img {
-	background-image: url(/shared/images2/rl/WhiteLogo.png);
+	background-image: url(http://jwreachlocal.github.io/scorpion/images/www_littletonradiationoncology_com/WhiteLogo.png);
 }
 
 .light #BrandContent img {
-	background-image: url(/shared/images2/rl/DarkLogo.png);
+	background-image: url(http://jwreachlocal.github.io/scorpion/images/www_littletonradiationoncology_com//shared/images2/rl/DarkLogo.png);
 }
 /* RL Logo */
 
@@ -98,7 +98,7 @@ h3 {
 .sched {
 	color: #FFF;
 	background-color: #2c63b6;
-	background-image: url(/files/images/EyeDoc-1/top-nav-bg.png);
+	background-image: url(http://jwreachlocal.github.io/scorpion/fonts/www_littletonradiationoncology_com/top-nav-bg.png);
 	padding: 4px 10px;
 	border-radius: 3px;
 	position: absolute;
@@ -118,7 +118,7 @@ h3 {
 	height: 42px;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
-	background-image: url(/files/images/EyeDoc-1/top-nav-bg.png);
+	background-image: url(http://jwreachlocal.github.io/scorpion/fonts/www_littletonradiationoncology_com/top-nav-bg.png);
 	background-repeat: repeat-x;
 	position: relative;
 	z-index: 2;
@@ -721,7 +721,7 @@ span.blog_h {
 	height: 407px;
 	position: relative;
 	z-index: 2;
-	background-image: url(/images/top_bg.jpg);
+	background-image: url(http://jwreachlocal.github.io/scorpion/images/www_littletonradiationoncology_com/top_bg.jpg);
 	min-width: 100%;
 	min-height: 100%;
 }
