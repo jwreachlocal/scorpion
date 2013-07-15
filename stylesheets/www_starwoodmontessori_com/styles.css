@@ -2237,7 +2237,7 @@ table.nospacing { border-collapse:separate !important;border-spacing:0 !importan
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'icomoon-social';
-    src: url('http://jwreachlocal.github.io/scorpion/fonts/www_starwoodmontessori_com/icomoon-social.svg') format('svg');
+    src: url('http://www.starwoodmontessori.com/Shared/fonts/icomoon-ult.svg') format('svg');
   }
 }
 
@@ -2434,7 +2434,7 @@ icon.youtube:before {
 	src:url('/Shared/fonts/icomoon-ult.eot?#iefix') format('embedded-opentype'),
 		url('/Shared/fonts/icomoon-ult.woff') format('woff'),
 		url('/Shared/fonts/icomoon-ult.ttf') format('truetype'),
-		url('/Shared/fonts/icomoon-ult.svg#icomoon') format('svg');
+		url('http://www.starwoodmontessori.com/Shared/fonts/icomoon-ult.svg#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -2442,7 +2442,7 @@ icon.youtube:before {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'icomoon-ult';
-    src: url('/Shared/fonts/icomoon-ult.svg') format('svg');
+    src: url('http://www.starwoodmontessori.com/Shared/fonts/icomoon-ult.svg') format('svg');
   }
 }
 
