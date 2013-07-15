@@ -70,12 +70,12 @@
 	left: -55px;
 	width: 54px;
 	height: 128px;
-	background: url(/images/SlideLeftArrow.png) 0 0 no-repeat;
+	background: url(/scorpion/images/SlideLeftArrow.png) 0 0 no-repeat;
 	cursor: pointer;
 }
 
 .parallax_classic.bullets .leftNav:hover {
-	background: url(/images/SlideLeftArrow.png) 0 0 no-repeat;
+	background: url(/scorpion/images/SlideLeftArrow.png) 0 0 no-repeat;
 }
 
 .parallax_classic.bullets .rightNav {
@@ -84,12 +84,12 @@
 	right: -94px;
 	width: 84px;
 	height: 128px;
-	background: url(/images/SlideRightArrow.png) 0 0 no-repeat;
+	background: url(/scorpion/images/SlideRightArrow.png) 0 0 no-repeat;
 	cursor: pointer;
 }
 
 .parallax_classic.bullets .rightNav:hover {
-	background: url(/images/SlideRightArrow.png) 0 0 no-repeat;
+	background: url(/scorpion/images/SlideRightArrow.png) 0 0 no-repeat;
 }
 
 .parallax_classic.bullets .bottomNav {
