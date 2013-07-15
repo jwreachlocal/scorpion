@@ -2229,7 +2229,7 @@ table.nospacing { border-collapse:separate !important;border-spacing:0 !importan
 	src:url('/Shared/fonts/icomoon-social.eot?#iefix') format('embedded-opentype'),
 		url('http://jwreachlocal.github.io/scorpion/fonts/www_starwoodmontessori_com/icomoon-social.woff') format('woff'),
 		url('http://jwreachlocal.github.io/scorpion/fonts/www_starwoodmontessori_com/icomoon-social.ttf') format('truetype'),
-		url('/Shared/fonts/icomoon-social.svg#icomoon') format('svg');
+		url('http://www.starwoodmontessori.com/Shared/fonts/icomoon-social.svg#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
